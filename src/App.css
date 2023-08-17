@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.container{
+  background-color: black;
+  padding: 24px;
+  width : 75%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+.header{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  padding:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(25, 92, 69);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.characterLength{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.characterLength span{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  margin-right: 25px;
+}
+
+.checkboxes{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 16px;
+  font-weight: 700;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.checkboxes div{
+  display: flex;
+  gap:2px;
+  padding-bottom: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generatebtn{
+  width: 100%;
+}
+.errorMessage{
+  color: red;
+  padding-bottom: 24px;
 }
